@@ -1,0 +1,1 @@
+docker-compose -f docker/docker_compose_dependency.yml up

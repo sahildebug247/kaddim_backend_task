@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  db:
+    image: postgres:12.2
+    ports:
+      - "5433:5432"
+    environment:
+      - POSTGRES_USER=root
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_DB=linkedin-backend
+    volumes:
+      - "/var/docker_volumes/linkedin-backend:/var/lib/postgresql/data"
